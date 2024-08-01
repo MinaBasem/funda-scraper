@@ -31,17 +31,17 @@ keep_cols:
     - photo
 css_selector:
   url: none
-  price: ".font-bold span"
+  price: "div.text-xl"
   address: ".object-header__container span.text-neutral-40"
   descrip: ".object-description-body"
   listed_since: ".fd-align-items-center:nth-child(6) span"
   zip_code: ".object-header__subtitle"
-  size: ".object-kenmerken-list:nth-child(8) .fd-align-items-center:nth-child(5) span"
+  size: "li:nth-of-type(1) span.md.font-bold"
   year: ".fd-align-items-center~ .fd-align-items-center .fd-m-right-xs"
   living_area: ".object-kenmerken-list:nth-child(8) .fd-align-items-center:nth-child(2) span"
   kind_of_house: ".object-kenmerken-list:nth-child(5) .fd-align-items-center:nth-child(2) span"
   building_type: ".object-kenmerken-list:nth-child(5) .fd-align-items-center:nth-child(4) span"
-  num_of_rooms: ".object-kenmerken-list:nth-child(11) .fd-align-items-center:nth-child(2)"
+  num_of_rooms: "li:nth-of-type(2) span.md.font-bold"
   num_of_bathrooms: ".object-kenmerken-list:nth-child(11) .fd-align-items-center:nth-child(4)"
   layout: ".object-kenmerken-list:nth-child(11)"
   energy_label: ".energielabel"
