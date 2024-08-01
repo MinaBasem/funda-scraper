@@ -41,7 +41,7 @@ css_selector:
   living_area: "dt:contains('Living') + dd"
   kind_of_house: ".object-kenmerken-list:nth-child(5) .fd-align-items-center:nth-child(2) span"
   building_type: ".object-kenmerken-list:nth-child(5) .fd-align-items-center:nth-child(4) span"
-  num_of_rooms: "ul li:nth-of-type(2):nth-last-of-type(-n+2) span, dt:contains('Number of rooms') + .border-neutral-20 span"
+  num_of_rooms: "dt:contains('Number of rooms') + .border-neutral-20 span, ul li:nth-of-type(2):nth-last-of-type(-n+2) span"
   num_of_bathrooms: ".object-kenmerken-list:nth-child(11) .fd-align-items-center:nth-child(4)"
   layout: ".object-kenmerken-list:nth-child(11)"
   energy_label: ".energielabel"
