@@ -1,0 +1,32 @@
+version: '3'
+services:
+  magic:
+    image: mageai/mageai:latest
+    command: mage start ${PROJECT_NAME}
+    env_file:
+      - .env
+    build:
+      context: .
+    environment:
+      USER_CODE_PATH: /home/src/${PROJECT_NAME}
+      ENV: dev
+    ports:
+      - 6789:6789
+    volumes:
+      - .:/home/src/
+    restart: on-failure:5
+
+  postgres:
+    image: postgis/postgis:latest
+    environment:
+      POSTGRES_DB: estate
+      POSTGRES_USER: estate
+      POSTGRES_PASSWORD: estate
+    ports:
+      - 5000:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres_data:
