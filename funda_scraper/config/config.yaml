@@ -31,9 +31,9 @@ keep_cols:
     - photo
 css_selector:
   url: none
-  price: ".font-bold span"
+  price: ".font-bold span, strong.object-header__price--historic, .text-xl div, div.text-xl"
   address: "span.object-header__subtitle, .object-header__container span.text-neutral-40"
-  descrip: "span.font-bold"
+  descrip: "span.object-header__title, span.font-bold"
   listed_since: ".fd-align-items-center:nth-child(6) span"
   zip_code: ".object-header__subtitle"
   size: "li:nth-of-type(1) span.md"
