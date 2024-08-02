@@ -41,7 +41,7 @@ css_selector:
   living_area: "li:nth-of-type(1) span.md\\:font-bold, li:nth-of-type(1) span.kenmerken-highlighted__value, .fd-m-right-s span.kenmerken-highlighted__value, .mt-6 div:nth-of-type(3) dl, dt:contains('Wonen') + dd"
   kind_of_house: ".object-kenmerken-list:nth-child(5) .fd-align-items-center:nth-child(2) span"
   building_type: ".object-kenmerken-list:nth-child(5) .fd-align-items-center:nth-child(4) span"
-  num_of_rooms: "div:nth-of-type(4) dl"
+  num_of_rooms: "dl:nth-of-type(4), div:nth-of-type(4) dl"
   num_of_bathrooms: ".object-kenmerken-list:nth-child(11) .fd-align-items-center:nth-child(4)"
   layout: ".object-kenmerken-list:nth-child(11)"
   energy_label: ".energielabel"
