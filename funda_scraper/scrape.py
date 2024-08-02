@@ -383,8 +383,6 @@ class FundaScraper(object):
             df = df.drop(["term", "price_sold", "date_sold"], axis=1)
         logger.info(f"*** All scraping done: {df.shape[0]} results ***")
         self.raw_df = df
-        df.to_csv('data-internal.csv', index=False)
-        print("<--------SAVED TO FILE-------->")
 
     def save_csv(self, df: pd.DataFrame, filepath: str = None) -> None:
         """Saves the scraped data to a CSV file."""
